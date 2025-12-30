@@ -1,0 +1,13 @@
+[package]
+name = "grpc"
+version = "0.1.0"
+description = "grpc information"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+# Third-party dependencies
+serde = { workspace = true }
+error-stack = "0.4.0"
+strum = { version = "0.26", features = ["derive"] }

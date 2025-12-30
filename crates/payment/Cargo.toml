@@ -1,0 +1,19 @@
+[package]
+name = "payment"
+version = "0.1.0"
+description = "payment information"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+domain_types = { path = "../domain_types" }
+grpc = { path = "../grpc" }
+common_enums = { path = "../common_enums", package = "ucs_common_enums" }
+connector_integration = {path = "../connector_integration"}
+common_utils = { path = "../common_utils", package = "ucs_common_utils" }
+interfaces = { path = "../interfaces" }
+external-services = { path = "../external_services" }
+# Third-party dependencies
+serde = { workspace = true }
+error-stack = "0.4.0"

@@ -1,0 +1,27 @@
+[package]
+name = "app"
+version = "0.1.0"
+edition = "2021"
+description = "Modern app"
+default-run = "app"
+
+[dependencies]
+payment = { path = "../payment" }
+connector_integration = {path = "../connector_integration"}
+domain_types={path = "../domain_types"}
+grpc = { path = "../grpc" }
+#third party dependencies
+serde = { workspace = true }
+serde_json = "1.0.115"
+actix-web = "4.4"
+tokio = { version = "1.0", features = ["full"] }
+uuid = { version = "1.0", features = ["v4"] }
+chrono = "0.4" 
+env_logger = "0.10"
+error-stack = "0.4"
+tracing = "0.1"
+tracing-subscriber = "0.3"
+
+[[bin]]
+name = "app"
+path = "src/bin/app.rs"
