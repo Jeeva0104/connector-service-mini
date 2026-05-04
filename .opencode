@@ -1,0 +1,69 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "plugin": [
+    "oh-my-openagent@latest",
+    "@plannotator/opencode@latest",
+    "superpowers@git+https://github.com/obra/superpowers.git"
+  ],
+  "provider": {
+    "grid-ai": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Grid AI",
+      "options": {
+        "baseURL": "",
+        "apiKey": ""
+      },
+      "models": {
+        "claude-opus-4-6": {
+          "name": "Claude Opus 4.6"
+        },
+        "claude-opus-4-5": {
+          "name": "Claude Opus 4.5"
+        },
+        "claude-sonnet-4-6": {
+          "name": "Claude Sonnet 4.6"
+        },
+        "claude-sonnet-4-5": {
+          "name": "Claude Sonnet 4.5"
+        },
+        "claude-sonnet-4-5-20250929": {
+          "name": "Claude Sonnet 4.5 (Sep 2025)"
+        },
+        "claude-haiku-4-5-20251001": {
+          "name": "Claude Haiku 4.5"
+        },
+        "claude-3-5-haiku-20241022": {
+          "name": "Claude 3.5 Haiku"
+        },
+        "gemini-3-pro-preview": {
+          "name": "Gemini 3 Pro"
+        },
+        "gemini-3-flash-preview": {
+          "name": "Gemini 3 Flash"
+        },
+        "gemini-embedding-001": {
+          "name": "Gemini Embedding"
+        },
+        "glm-latest": {
+          "name": "GLM Latest (GLM-5-Dev)"
+        },
+        "glm-flash-experimental": {
+          "name": "GLM Flash Experimental"
+        },
+        "kimi-latest": {
+          "name": "Kimi Latest (K2.5-Dev)"
+        },
+        "open-large": {
+          "name": "Open Large (Kimi K2.5)"
+        },
+        "open-fast": {
+          "name": "Open Fast (MiniMax M2.1)"
+        },
+        "minimaxai/minimax-m2": {
+          "name": "MiniMax M2"
+        }
+      }
+    }
+  },
+  "model": "grid-ai/kimi-latest"
+}
